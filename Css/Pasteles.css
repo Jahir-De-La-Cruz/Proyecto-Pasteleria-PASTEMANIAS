@@ -1,0 +1,487 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+
+.swal-custom-button {
+    background-color: #ffb03a;
+    color: #FFFFD1;
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    font-size: 18px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FFFFD1;
+    font-family: 'Oswald', sans-serif;
+}
+
+/* Barra de Navegación */
+
+.menu {
+    display: flex;
+    align-items: center;
+    height: 150px;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-weight: bold;
+    background-color: #ffb03a;
+    font-family: 'Pacifico', cursive;
+}
+
+.menu h1 {
+    color: #fff;
+    font-size: 45px;
+}
+
+.menu ul li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    color: #C4FAF8;
+}
+
+h1 {
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 160px;
+    height: 160px;
+    margin-bottom: 10px;
+    margin-right: 5px;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+/* seccion 1 */
+
+.seccion1 {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+}
+
+.image-container img {
+    display: block;
+    width: 100%;
+}
+
+/* seccion 2 */
+
+.seccion2 {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.Productos-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+.Productos-cards {
+    margin: 8px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 20px;
+    margin-bottom: 0;
+}
+
+.pastel-color1 {
+    background-color: #70CAEE;
+    border: 6px solid #FCF09E;
+}
+
+.pastel-color2 {
+    background-color: #FC5B5E;
+    border: 6px solid #FCF09E;
+}
+
+.card-image {
+    width: 250px;
+    height: 200px;
+    border-radius: 20px;
+}
+
+.card-image.zoom-image:hover {
+    transform: scale(1.1);
+}
+
+.card-title {
+    color: #f8f8f8;
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.card-description {
+    color: #f8f8f8;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.btnComprar {
+    background-color: #ff9b9d;
+    color: #fff;
+    border: solid 3px #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 5px;
+    height: 40px;
+}
+
+.btnComprar:hover {
+    background-color: #ff9cee;
+}
+
+/* footer */
+
+.footer {
+    margin: 20px 0px 0px 0px;
+    background-color: #ffb03a;
+    padding: 40px;
+    text-align: center;
+}
+
+.footer__title {
+    color: #fff;
+    font-family: 'Pacifico', cursive;
+    font-size: 30px;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+.contacto {
+    margin-top: 40px;
+}
+
+.iconos {
+    display: flex;
+    justify-content: center;
+}
+  
+.footer__icon {
+    display: inline-block;
+    background-color: #ff5c5f;
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+    margin: 10px;
+    font-size: 25px;
+    text-decoration: none;
+    width: 60px;
+}
+  
+.footer__icon:hover {
+    background-color: #ff7578;
+}
+
+.end-title {
+    color: #fff;
+    font-family: "Arial", sans-serif;
+    font-size: 16px;
+    margin-top: 40px;
+}
+
+@media (max-width: 600px) {
+    .menu {
+        width: 100%;
+        height: 30vh;
+        padding-top: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+      
+    .menu .logo h1 {
+        font-size: 30px;
+        margin-bottom: 0;
+        letter-spacing: 0;
+    }
+      
+    .menu .logo img {
+        width: 140px;
+        height: 140px;
+        margin-bottom: 0;
+        margin: 0;
+    }
+      
+    .menu .links {
+        padding: 0;
+        margin-top: -20px;
+        padding-left: 10px;
+        font-size: 18px;
+    }
+
+    /* seccion1 */
+
+    .seccion1 {
+        width: 100%;
+    }
+
+    .image-text {
+        top: 60%;
+        left: 50%;
+        font-size: 20px;
+    }
+
+    /* seccion2 */
+
+    .seccion2 {
+        margin: 10px 0px;
+        /* padding: 6px; */
+    }
+
+    .Productos-container {
+        grid-template-columns: repeat(2, 1fr); /* Cambiamos a una columna */
+        grid-gap: 0px;
+    }
+    
+    .Productos-cards {
+        margin: 6px;
+        max-width: 90%; /* El ancho máximo ocupa todo el espacio disponible */
+    }
+    
+    .card-image {
+        max-width: 100%; /* La imagen ocupa todo el ancho de la tarjeta */
+        height: 200px;
+    }
+    
+    .card-title {
+        font-size: 24px; /* Reducimos el tamaño de la fuente */
+    }
+    
+    .card-description {
+        font-size: 16px; /* Reducimos el tamaño de la fuente */
+    }
+
+    /* footer */
+
+    .footer {
+        padding: 20px;
+    }
+
+    .footer__title {
+        font-size: 28px;
+        margin-bottom: 10px;
+        letter-spacing: 0px;
+    }
+
+    .contacto {
+        margin-top: 30px;
+    }
+
+    .footer__icon {
+        padding: 10px;
+        font-size: 20px;
+        width: 40px;
+    }
+
+    .end-title {
+        font-size: 14px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 400px) {
+    .menu {
+        width: 100%;
+        height: 30vh;
+        padding-top: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .menu .logo h1 {
+        font-size: 24px;
+        margin-bottom: 0;
+        letter-spacing: 0;
+    }
+
+    .menu .logo img {
+        width: 120px;
+        height: 120px;
+        margin-bottom: 0;
+        margin: 0;
+    }
+
+    .menu .links {
+        padding: 0;
+        margin-top: -20px;
+        padding-left: 8px;
+        font-size: 16px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .menu .links a {
+        margin: 8px 0px; /* Ajusta el valor según el espacio deseado */
+    }
+
+    /* seccion1 */
+
+    .seccion1 {
+        width: 100%;
+    }
+
+    .image-text {
+        top: 60%;
+        left: 50%;
+        font-size: 16px;
+    }
+
+    /* seccion2 */
+
+    .seccion2 {
+        margin: 0px;
+        /* padding: 4px; */
+    }
+
+    .Productos-container {
+        grid-template-columns: repeat(2, 1fr); /* Cambiamos a una columna */
+        grid-gap: 0px;
+    }
+    
+    .Productos-cards {
+        margin: 4px;
+        max-width: 90%; /* El ancho máximo ocupa todo el espacio disponible */
+    }
+    
+    .card-image {
+        width: 100%; /* La imagen ocupa todo el ancho de la tarjeta */
+        height: 150px;
+    }
+    
+    .card-title {
+        font-size: 20px; /* Reducimos el tamaño de la fuente */
+    }
+    
+    .card-description {
+        font-size: 14px; /* Reducimos el tamaño de la fuente */
+    }
+
+    /* seccion3 */
+
+    .ofertas-title {
+        padding: 16px;
+        font-size: 24px;
+    }
+    
+    .carousel-container {
+        max-width: 400px;
+        margin: auto;
+    }
+    
+    .pastel-carousel .card-title-oferta {
+        padding-top: 8px;
+    }
+      
+    .pastel-carousel .card-description-oferta {
+        margin-top: 2px;
+    }
+      
+    .pastel-carousel .btnComprar {
+        background-color: #ff9b9d;
+        color: #fff; 
+        font-family: 'Oswald', sans-serif;
+        padding: 0 30px;
+    }
+    
+    /* footer */
+
+    .footer {
+        padding: 10px;
+    }
+
+    .container__sugerencias {
+        margin-bottom: 8px;
+    }
+    
+    .container__sugerencias .formulario {
+        width: 100%;
+        max-width: 300px;
+        padding: 20px;
+    }
+    
+    .container__sugerencias .formulario h3 {
+        font-size: 20px;
+    }
+    
+    .container__sugerencias .formulario h3:nth-child(2) {
+        font-size: 16px;
+    }
+    
+    .container__sugerencias .formulario input,
+    .container__sugerencias .formulario textarea {
+        width: 100%;
+        margin-top: 8px;
+        padding: 8px;
+        font-size: 12px;
+    }
+    
+    input::placeholder {
+        font-size: 14px;
+    }
+
+    .footer__title {
+        font-size: 24px;
+        margin-bottom: 8px;
+        letter-spacing: 0px;
+    }
+
+    .contacto {
+        margin-top: 20px;
+    }
+
+    .footer__icon {
+        padding: 8px;
+        font-size: 16px;
+        width: 32px;
+    }
+
+    .end-title {
+        font-size: 12px;
+        margin-top: 16px;
+        margin-bottom: 20px;
+    }
+}

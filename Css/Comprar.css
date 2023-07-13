@@ -1,0 +1,349 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FFFFD1;
+}
+
+/* menu */
+
+.menu {
+    display: flex;
+    align-items: center;
+    height: 150px;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-weight: bold;
+    background-color: #ffb03a;
+    font-family: 'Pacifico', cursive;
+}
+
+.menu h1 {
+    color: #fff;
+    font-size: 45px;
+}
+
+h1 {
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 160px;
+    height: 160px;
+    margin-bottom: 10px;
+    margin-right: 5px;
+}
+
+/* formulario */
+
+.contenedor__formulario {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120vh;
+  }
+  
+.contenedor__formulario form {
+    width: 100%;
+    max-width: 380px;
+    padding: 50px 20px;
+    background: #fff;
+    border-radius: 20px;
+    border: 6px solid #FCF09E;
+}
+  
+.contenedor__formulario form h2 {
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ff7578;
+}
+  
+.contenedor__formulario form input {
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    background: #f2f2f2;
+    font-size: 16px;
+    outline: none;
+    margin-bottom: 10px;
+}
+
+input::placeholder {
+    color:#ff9b9d;
+    font-size: 18px;
+}
+
+.contenedor__formulario form .lbldetalle {
+    font-size: 26px;
+    font-weight: bold;
+    color: #ff5c5f;
+    padding: 10px;
+}
+  
+.contenedor__formulario form button {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 40px;
+    border: none;
+    font-size: 14px;
+    background: #ff7578;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+}
+
+.contenedor__formulario form button:hover {
+    background-color: #ff5c5f;
+}
+
+.contenedor__formulario form a {
+    text-decoration: none;
+    color: #ff7578;
+}
+
+.contenedor__formulario form a:hover {
+    text-decoration: underline;
+}
+
+/* footer */
+
+.footer {
+    background-color: #ffb03a;
+    padding: 40px;
+    text-align: center;
+}
+
+.footer__title {
+    color: #fff;
+    font-family: 'Pacifico', cursive;
+    font-size: 30px;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+.contacto {
+    margin-top: 40px;
+}
+
+.iconos {
+    display: flex;
+    justify-content: center;
+}
+  
+.footer__icon {
+    display: inline-block;
+    background-color: #ff5c5f;
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+    margin: 10px;
+    font-size: 25px;
+    text-decoration: none;
+    width: 60px;
+}
+  
+.footer__icon:hover {
+    background-color: #ff7578;
+}
+
+.end-title {
+    color: #fff;
+    font-family: "Arial", sans-serif;
+    font-size: 16px;
+    margin-top: 40px;
+}
+
+@media (max-width: 600px) {
+    .menu {
+        width: 100%;
+        height: 20vh;
+        padding-top: 10px;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .menu h1 {
+        font-size: 30px;
+    }
+    
+    h1 {
+        letter-spacing: normal;
+        margin-bottom: 0px;
+    }
+        
+    .menu img {
+        width: 140px;
+        height: 140px;
+    }
+    
+    /* formulario */
+    
+    .contenedor__formulario {
+        height: 120vh;
+        margin: 20px;
+      }
+      
+    .contenedor__formulario form {
+        padding: 60px 20px;
+    }
+      
+    .contenedor__formulario form h2 {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+      
+    .contenedor__formulario form input {
+        margin-top: 10px;
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    
+    input::placeholder {
+        font-size: 16px;
+    }
+
+    .contenedor__formulario form .lbldetalle {
+        font-size: 22px;
+        font-weight: bold;
+        color: #ff5c5f;
+        padding: 10px;
+    }
+      
+    .contenedor__formulario form button {
+        padding: 10px 50px;
+    }
+        
+    .contenedor__formulario form a {
+        font-size: 14px;
+    }
+
+    /* footer */
+    
+    .footer {
+        padding: 20px;
+    }
+    
+    .footer__title {
+        font-size: 28px;
+        margin-bottom: 10px;
+        letter-spacing: 0px;
+    }
+    
+    .contacto {
+        margin-top: 30px;
+    }
+    
+    .footer__icon {
+        padding: 10px;
+        font-size: 20px;
+        width: 40px;
+    }
+        
+    .end-title {
+        font-size: 14px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    } 
+}
+
+@media (max-width: 400px) {
+    .menu {
+        width: 100%;
+        height: 20vh;
+        padding-top: 10px;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .menu h1 {
+        font-size: 24px;
+    }
+    
+    h1 {
+        letter-spacing: normal;
+        margin-bottom: 0px;
+    }
+        
+    .menu img {
+        width: 120px;
+        height: 120px;
+    }
+
+    /* formulario */
+
+    .contenedor__formulario {
+        height: 100vh;
+        margin: 20px;
+    }
+
+    .contenedor__formulario form {
+        padding: 30px 10px;
+    }
+
+    .contenedor__formulario form h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .contenedor__formulario form input {
+        margin-top: 10px;
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+
+    input::placeholder {
+        font-size: 14px;
+    }
+
+    .contenedor__formulario form .lbldetalle {
+        font-size: 18px;
+        font-weight: bold;
+        color: #ff5c5f;
+        padding: 10px;
+    }
+
+    .contenedor__formulario form button {
+        padding: 8px 40px;
+    }
+
+    /* footer */
+
+    .footer {
+        padding: 10px;
+    }
+
+    .footer__title {
+        font-size: 20px;
+        margin-bottom: 8px;
+        letter-spacing: 0px;
+    }
+
+    .contacto {
+        margin-top: 20px;
+    }
+
+    .footer__icon {
+        padding: 8px;
+        font-size: 16px;
+        width: 32px;
+    }
+
+    .end-title {
+        font-size: 12px;
+        margin-top: 16px;
+        margin-bottom: 20px;
+    }
+}
